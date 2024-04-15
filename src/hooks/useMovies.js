@@ -1,11 +1,8 @@
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { setNowPlayingMovies } from '../store/moviesSlice';
+import { useState, useEffect } from 'react';
 import { TMDB_API_KEY } from '../utils/constants';
 
 const useMovies = (url) => {
-  const dispatch = useDispatch();
-
+  const [movies, setMovies] = useState([]);
   useEffect(() => {
     const getNowPlayingMovies = async () => {
       const response = await fetch(url, {
@@ -16,11 +13,13 @@ const useMovies = (url) => {
         },
       });
       const responseJson = await response.json();
-      dispatch(setNowPlayingMovies(responseJson.results));
+      setMovies(responseJson.results);
     };
 
     getNowPlayingMovies();
-  }, [url, dispatch]);
+  }, [url]);
+
+  return movies;
 }
 
 export default useMovies;
