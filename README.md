@@ -34,6 +34,9 @@
 - TMDB Image CDN URL
 - Made the Browsre page amazing with Tailwind CSS
 - Show now playing, popular, top rated and upcoming movies
+- GPT Search Page
+- GPT Search Bar
+- Multi-language Feature
 
 # Features
 - Login/Sign Up

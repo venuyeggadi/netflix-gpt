@@ -3,3 +3,9 @@ export const NETFLIX_BANNER_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/9d
 
 export const TMDB_API_KEY =
   "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NmQ2M2FiZmU1YzQzZDgxMDBmM2U0MGRjMWJhMmFmNSIsInN1YiI6IjY2MTYxMTUxMTA5ZGVjMDE3YjlkYTFlZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.07P93ycyLFjdouT2qsXtyOHdfy8xG-R1f8FotjtSgJA";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+];
