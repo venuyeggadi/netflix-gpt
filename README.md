@@ -1,5 +1,8 @@
 ## This project is live [here](https://netflixgpt-be034.web.app/)
 
+# Project Setup
+- Before starting the project please add .env file and add TMDB and OPENAI KEY into it.
+
 # Netflix-GPT
 - Create React App
 - Configure Tailwind
