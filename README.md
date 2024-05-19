@@ -1,3 +1,5 @@
+## This project is live [here](https://netflixgpt-be034.web.app/)
+
 # Netflix-GPT
 - Create React App
 - Configure Tailwind
