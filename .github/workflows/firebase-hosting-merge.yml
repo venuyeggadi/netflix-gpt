@@ -7,6 +7,11 @@ name: Deploy to Firebase Hosting on merge
     branches:
       - main
   workflow_dispatch:
+
+env:
+  REACT_APP_TMDB_API_KEY: ${{ secrets.REACT_APP_TMDB_API_KEY }}
+  REACT_APP_OPEN_AI_API_KEY: ${{ secrets.REACT_APP_OPEN_AI_API_KEY }}
+  
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
