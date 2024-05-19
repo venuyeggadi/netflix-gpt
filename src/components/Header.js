@@ -1,4 +1,4 @@
-import { AccountCircle } from "@mui/icons-material";
+//import { AccountCircle } from "@mui/icons-material";
 import { signOut } from "firebase/auth";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -47,7 +47,7 @@ const Header = () => {
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [dispatch, navigate]);
 
   const handleGptButtonClick = () => {
     console.log("GPT Button Clicked");
